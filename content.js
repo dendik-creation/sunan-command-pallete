@@ -52,6 +52,10 @@
 
     function render() {
       list.innerHTML = "";
+      if (filtered.length === 0) {
+        list.innerHTML = `<div class="command-item">Tidak ada hasil yang ditemukan</div>`;
+        return;
+      }
       filtered.forEach((item, i) => {
         const div = document.createElement("div");
         div.className = "command-item" + (i === selectedIndex ? " active" : "");

@@ -3,7 +3,7 @@
   inset: 0;
   background-color: rgba(15, 15, 15, 0.9);
   z-index: 99999;
-  display: flex !important;
+  display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 80px;
@@ -37,6 +37,24 @@
 #command-list {
   overflow-y: auto;
   max-height: 50vh;
+}
+
+/* === Custom Scrollbar === */
+#command-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+#command-list::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+#command-list::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+#command-list::-webkit-scrollbar-thumb:hover {
+  background-color: #777;
 }
 
 .command-item {

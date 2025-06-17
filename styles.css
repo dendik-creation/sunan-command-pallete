@@ -1,0 +1,54 @@
+#command-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999998;
+}
+
+#command-palette {
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  max-height: 500px;
+  overflow-y: auto;
+  background-color: #1e293b;
+  color: white;
+  font-family: sans-serif;
+  border-radius: 10px;
+  z-index: 999999;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  padding: 20px;
+}
+
+#command-input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 6px;
+  border: none;
+  font-size: 18px;
+  margin-bottom: 16px;
+  background: #334155;
+  color: white;
+}
+
+.command-item {
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.command-item:hover,
+.command-item.active {
+  background-color: #2563eb;
+}
+
+.command-icon {
+  margin-right: 10px;
+  font-size: 18px;
+}

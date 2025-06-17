@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Sunan Quick Search",
+  "description": "Command Palette to search for courses and events (assignments or exams) on the Sunan dashboard page.",
+  "version": "1.0",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://sunan.umk.ac.id/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "icons": {
+    "16": "assets/icon/icon.png",
+    "32": "assets/icon/icon.png",
+    "48": "assets/icon/icon.png",
+    "128": "assets/icon/icon.png"
+  }
+}

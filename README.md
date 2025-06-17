@@ -2,13 +2,22 @@
 
 # Sunan Command Palette
 
-A Command Palette to display a list of courses and events (exams/assignments) from the Sunan e-learning page (https://sunan.umk.ac.id), accessible with the `Ctrl+Shift+P` shortcut.
+A command palette that displays a list of courses and events (exams/assignments) from the Sunan e-learning page (https://sunan.umk.ac.id), accessible with the `Ctrl+Shift+P` shortcut.
 
 ## 🔧 Features
 
-- Displays a quick search command palette with a modern dark mode UI.
+- Displays a quick-search command palette with a modern dark mode UI.
 - Navigate using `↑ ↓` to select items in the list.
 - Press `Enter` to open the selected item.
 - Press `ESC` to close the command palette.
-- Shortcut `Ctrl+Shift+P` opens the palette.
-- Displays real-time data from courses and calendar events.
+- Use the `Ctrl+Shift+P` shortcut to open the palette.
+- Shows real-time data from courses and calendar events.
+
+## 📦 Installation
+
+- Clone this repository.
+- Open your browser's extension manager.
+- Enable developer mode.
+- Click "Load unpacked."
+- Select the cloned repository directory.
+- Test it on the https://sunan.umk.ac.id dashboard page.

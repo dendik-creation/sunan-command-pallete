@@ -12,7 +12,7 @@
     html.innerHTML = `
       <div id="command-backdrop" style="display:none;">
         <div id="command-palette">
-          <input id="command-input" placeholder="Cari mata kuliah atau event..." />
+          <input id="command-input" autocomplete="off" placeholder="Cari mata kuliah atau event..." />
           <div id="command-list"></div>
         </div>
       </div>
@@ -70,7 +70,7 @@
     const list = document.getElementById("command-list");
     list.innerHTML = "";
     if (filtered.length === 0) {
-      list.innerHTML = `<div class="command-item">Tidak ada hasil yang ditemukan</div>`;
+      list.innerHTML = `<div class="command-item"><span class="command-icon">🍔</span> Tidak ada hasil yang ditemukan</div>`;
       return;
     }
 
@@ -92,7 +92,7 @@
     const backdrop = document.getElementById("command-backdrop");
     const input = document.getElementById("command-input");
 
-    data = [...getCourses(), ...getEvents()];
+    data = [...getEvents(), ...getCourses()];
     filtered = [...data];
     selectedIndex = 0;
     isPaletteOpen = true;
